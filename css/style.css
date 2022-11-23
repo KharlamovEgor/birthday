@@ -1,0 +1,89 @@
+:root {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+}
+
+body {
+  font-size: 1.5rem;
+  padding: 10px;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  background: url("../images/cake.png") 1% 1%/256px no-repeat,
+    no-repeat 99% 99%/256px url("../images/confetti.png");
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 1.2rem;
+    background: 1% 1%/100px url("../images/cake.png") no-repeat,
+      no-repeat 99% 99%/100px url("../images/confetti.png");
+    background-color: tomato;
+  }
+}
+
+figure {
+  background-color: wheat;
+  color: white;
+  border-radius: 2rem;
+  max-width: 500px;
+  min-width: 300px;
+  padding: 1.7rem;
+  margin: 0;
+}
+
+figure img {
+  border-radius: 1rem;
+  display: block;
+  max-width: 100%;
+  margin-bottom: 1em;
+}
+
+@keyframes happ {
+  from {
+    transform: translateX(200px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.happy {
+  position: absolute;
+  animation: 1s ease happ;
+  right: 0;
+  top: 0;
+}
+
+.happy img {
+  display: block;
+  max-width: 124px;
+  padding: 15px;
+}
+
+.some {
+  box-shadow: 0 0 0 10000px #00000099;
+  background-color: white;
+  padding: 15px;
+  border-radius: 2rem;
+  position: absolute;
+  max-width: 500px;
+  margin: 10px;
+  display: none;
+}
+
+.some.active {
+  display: block;
+}

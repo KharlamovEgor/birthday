@@ -61,7 +61,7 @@ figure img {
 }
 
 .happy {
-  position: absolute;
+  position: fixed;
   animation: 1s ease happ;
   right: 0;
   top: 0;
